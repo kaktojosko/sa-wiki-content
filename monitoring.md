@@ -1,5 +1,3 @@
-# Мониторинг и логирование систем
-
 ## Введение
 
 В мире сложных программных систем и распределенных архитектур, понимание того, что происходит «под капотом», становится не просто желательным, а абсолютно необходимым. **Мониторинг и логирование** — это два фундаментальных столпа, на которых держится стабильность, производительность и безопасность современных IT-систем. Без них команды разработки и эксплуатации остаются «слепыми» и неспособными своевременно реагировать на проблемы, оптимизировать производительность и обеспечивать надежность своих продуктов.
@@ -54,7 +52,6 @@ class JsonFormatter(logging.Formatter):
             log_record['exc_info'] = self.formatException(record.exc_info)
         return json.dumps(log_record)
 
-# Настройка логгера
 logger = logging.getLogger('my_app')
 logger.setLevel(logging.INFO)
 
@@ -66,7 +63,6 @@ logger.addHandler(handler)
 def process_user_request(user_id):
     logger.info(f"Processing request for user {user_id}")
     try:
-        # Какой-то сложный процесс
         result = 10 / 0
     except ZeroDivisionError:
         logger.error("An error occurred while processing the request", exc_info=True)

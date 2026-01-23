@@ -1,5 +1,3 @@
-# Хэширование, шифрование и кодирование: в чем разница?
-
 ## Введение
 
 В мире информационных технологий мы постоянно сталкиваемся с понятиями хэширования, шифрования и кодирования. На первый взгляд они могут показаться синонимами, ведь все они преобразуют данные. Однако их цели, принципы работы и области применения кардинально различаются. Понимание этих различий критически важно не только для разработчиков и специалистов по безопасности, но и для любого, кто хочет ориентироваться в цифровом мире. Эта статья поможет разобраться, что представляет собой каждый из этих процессов, где он используется и какие задачи решает.
@@ -45,18 +43,14 @@
 ```python
 import base64
 
-# Предположим, это наши бинарные данные (например, картинка)
 original_data = b'\xDE\xAD\xBE\xEF'
 
-# Кодируем в Base64
 encoded_data = base64.b64encode(original_data)
 print(f"Закодированные данные: {encoded_data}")
 
-# Декодируем обратно
 decoded_data = base64.b64decode(encoded_data)
 print(f"Раскодированные данные: {decoded_data}")
 
-# Проверяем, что данные совпадают
 assert original_data == decoded_data
 ```
 
@@ -68,26 +62,19 @@ assert original_data == decoded_data
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
 
-# Секретные данные
 data = b'This is a secret message.'
 
-# Генерируем случайный 16-байтный ключ
 key = get_random_bytes(16)
 
-# Создаем объект шифра AES
 cipher = AES.new(key, AES.MODE_EAX)
 
-# Шифруем данные
 ciphertext, tag = cipher.encrypt_and_digest(data)
 
 print(f"Зашифрованные данные: {ciphertext}")
 
-# --- На стороне получателя ---
 
-# Создаем новый объект с тем же ключом и nonce
 decipher = AES.new(key, AES.MODE_EAX, nonce=cipher.nonce)
 
-# Расшифровываем и проверяем целостность
 decrypted_data = decipher.decrypt_and_verify(ciphertext, tag)
 
 print(f"Расшифрованные данные: {decrypted_data.decode('utf-8')}")
@@ -102,14 +89,11 @@ import hashlib
 
 password = "MySecurePassword123"
 
-# Хэшируем пароль с использованием SHA-256
 hash_object = hashlib.sha256(password.encode())
 hex_dig = hash_object.hexdigest()
 
 print(f"Хэш пароля (SHA-256): {hex_dig}")
 
-# При входе пользователя мы сравниваем хэш введенного пароля с сохраненным
-# Если кто-то украдет базу, он увидит только хэши, а не сами пароли.
 ```
 
 ## Типичные ошибки и как их избежать

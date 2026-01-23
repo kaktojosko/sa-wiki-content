@@ -153,7 +153,6 @@ def is_password_valid(password):
         return False
     return True
 
-# Примеры использования
 print(is_password_valid('password123'))  # False
 print(is_password_valid('Password123')) # True
 ```

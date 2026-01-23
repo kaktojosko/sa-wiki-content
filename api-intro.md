@@ -1,5 +1,3 @@
-# API: что это такое и как работает
-
 ## Введение: что такое API и зачем это нужно?
 
 Аббревиатура API (Application Programming Interface) — программный интерфейс приложения — все чаще встречается не только в требованиях к вакансиям для разработчиков, но и в повседневной жизни. Когда вы оплачиваете покупку в интернет-магазине, заказываете такси через приложение или проверяете погоду на своем смартфоне, вы, скорее всего, используете API. 
@@ -36,24 +34,17 @@
 import requests
 import json
 
-# Ваш ключ API от OpenWeatherMap
 api_key = "ВАШ_API_КЛЮЧ"
 
-# Город, для которого вы хотите получить погоду
 city_name = "Москва"
 
-# Формируем URL для запроса к API
 url = f"http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric&lang=ru"
 
-# Отправляем GET-запрос
 response = requests.get(url)
 
-# Проверяем, что запрос прошел успешно
 if response.status_code == 200:
-    # Получаем данные в формате JSON
     data = response.json()
 
-    # Извлекаем нужную информацию
     temperature = data['main']['temp']
     description = data['weather'][0]['description']
 

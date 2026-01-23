@@ -1,5 +1,3 @@
-# JWT (JSON Web Tokens): Полное руководство
-
 ## Введение: Что такое JWT и зачем он нужен?
 
 **JSON Web Token (JWT)**, произносится как "джот" (/dʒɒt/), представляет собой открытый стандарт (RFC 7519) для создания токенов доступа, которые используются для безопасной передачи информации между двумя сторонами в виде JSON-объекта. В мире веб-разработки JWT стали де-факто стандартом для реализации аутентификации и авторизации в API, особенно в микросервисной архитектуре и одностраничных приложениях (SPA).
@@ -116,10 +114,8 @@ pip install PyJWT
 import jwt
 import datetime
 
-# Секретный ключ (в реальном приложении должен быть сложным и храниться в секрете)
 SECRET_KEY = "your-super-secret-key"
 
-# Данные для полезной нагрузки
 payload = {
     "user_id": 123,
     "username": "testuser",
@@ -127,7 +123,6 @@ payload = {
     "iat": datetime.datetime.utcnow()
 }
 
-# Создание JWT
 token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
 print(f"Сгенерированный токен: {token}")
@@ -138,12 +133,10 @@ print(f"Сгенерированный токен: {token}")
 ```python
 import jwt
 
-# Предположим, это токен, полученный от клиента
 received_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjMsInVzZXJuYW1lIjoidGVzdHVzZXIiLCJleHAiOjE2NzQ0ODQyMjMsImlhdCI6MTY3NDQ4MDYyM30.some_signature"
 SECRET_KEY = "your-super-secret-key"
 
 try:
-    # Декодирование и проверка токена
     decoded_payload = jwt.decode(received_token, SECRET_KEY, algorithms=["HS256"])
     print("Токен валиден!")
     print(f"Полезная нагрузка: {decoded_payload}")

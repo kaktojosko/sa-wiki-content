@@ -1,4 +1,3 @@
-
 _# HTTP-методы: GET, POST, PUT, PATCH, DELETE_
 
 ## Введение

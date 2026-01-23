@@ -1,4 +1,3 @@
-# Протоколы передачи данных: TCP/IP, UDP, HTTP, и HTTPS
 _Уровень сложности: 7/10_
 
 ## Введение
@@ -88,10 +87,8 @@ graph TD
 import requests
 
 try:
-    # Отправляем GET-запрос на указанный URL
     response = requests.get('http://example.com')
 
-    # Проверяем, успешен ли запрос (код состояния 200)
     if response.status_code == 200:
         print(f"Успешный запрос! Код состояния: {response.status_code}")
         print("\nСодержимое страницы (первые 150 символов):")

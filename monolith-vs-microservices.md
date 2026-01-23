@@ -1,6 +1,5 @@
 > **Уровень сложности:** 7/10
 
-# Монолитная vs Микросервисная архитектура: подробный разбор для разработчиков
 
 ## Введение
 
@@ -101,20 +100,14 @@ class MonolithicApplication:
 **Пример кода (псевдокод):**
 
 ```python
-# UserService
 class UserService:
     def get_user(self, user_id):
-        # ... логика получения пользователя
 
-# OrderService
 class OrderService:
     def create_order(self, user_id, order_details):
-        # ... логика создания заказа
 
-# RestaurantService
 class RestaurantService:
     def get_restaurant(self, restaurant_id):
-        # ... логика получения ресторана
 ```
 
 ## Типичные ошибки и как их избежать

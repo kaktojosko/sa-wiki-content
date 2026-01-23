@@ -42,30 +42,24 @@ from functools import wraps
 
 app = Flask(__name__)
 
-# Упрощенная база данных пользователей
 users = {
     "admin": {"password": "password123", "roles": ["admin", "user"]},
     "user1": {"password": "password456", "roles": ["user"]}
 }
 
-# Функция для симуляции проверки токена (аутентификация)
 def get_current_user():
-    # В реальном приложении здесь была бы проверка JWT или сессионного токена
     user_id = request.headers.get("X-User-ID")
     if user_id in users:
         return {"id": user_id, **users[user_id]}
     return None
 
-# Декоратор для проверки авторизации (требуется определенная роль)
 def requires_role(role):
     def decorator(f):
         @wraps(f)
         def decorated_function(*args, **kwargs):
             user = get_current_user()
-            # 1. Аутентификация: пользователь должен быть в системе
             if not user:
                 abort(401) # Unauthorized (нет аутентификации)
-            # 2. Авторизация: у пользователя должна быть нужная роль
             if role not in user["roles"]:
                 abort(403) # Forbidden (нет авторизации)
             return f(*args, **kwargs)

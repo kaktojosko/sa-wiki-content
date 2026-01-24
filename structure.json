@@ -14,7 +14,7 @@
       "title": "Требования",
       "items": [
         { "title": "Виды требований", "slug": "requirements-types", "tags": ["requirements"], "difficulty": 5, "word_count": 1112 },
-        { "title": "User Story", "slug": "user-story", "tags": ["requirements", "agile"], "difficulty": 4, "word_count": 880 },
+        { "title": "User Story", "slug": "user-story", "tags": ["requirements", "agi le"], "difficulty": 4, "word_count": 880 },
         { "title": "INVEST", "slug": "invest", "tags": ["requirements", "agile"], "difficulty": 4, "word_count": 841 },
         { "title": "Use Case", "slug": "use-case", "tags": ["requirements", "uml"], "difficulty": 4, "word_count": 1136 }
       ]
@@ -60,7 +60,7 @@
         { "title": "HTTP Методы", "slug": "http-methods", "tags": ["api", "http"], "difficulty": 4, "word_count": 1448 },
         { "title": "HTTP Коды", "slug": "http-codes", "tags": ["api", "http"], "difficulty": 4, "word_count": 1452 },
         { "title": "Протоколы (TCP/IP, HTTP)", "slug": "protocols", "tags": ["network", "basics"], "difficulty": 7, "word_count": 1773 },
-        { "title": "JSON", "slug": "json", "tags": ["api", "format"], "difficulty": 4, "word_count": 870 },
+        { "title": "JSON", "slug": "json", "tags": ["api", "format", "basics"], "difficulty": 4, "word_count": 870 },
         { "title": "JSON Schema", "slug": "json-schema", "tags": ["api", "format"], "difficulty": 6, "word_count": 903 },
         { "title": "XML vs JSON", "slug": "xml-vs-json", "tags": ["api", "format", "comparison"], "difficulty": 4, "word_count": 1012 },
         { "title": "Swagger", "slug": "swagger", "tags": ["api", "tools"], "difficulty": 6, "word_count": 1009 },

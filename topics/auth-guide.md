@@ -26,8 +26,7 @@
 
 | Тип токена | Назначение | Время жизни | Безопасность |
 | :--- | :--- | :--- | :--- |
-| **Access Token** | Доступ к ресурсам (API, данные профиля). | Короткое (например 5–30 минут) | Обычно передается в заголовке `Authorization: Bearer <token>` 
-на клиенте предпочтительно хранить в памяти приложения, чтобы снизить риск XSS-кражи. |
+| **Access Token** | Доступ к ресурсам (API, данные профиля). | Короткое (например 5–30 минут) | Обычно передается в заголовке `Authorization: Bearer <token>`. на клиенте предпочтительно хранить в памяти приложения, чтобы снизить риск XSS-кражи. |
 | **Refresh Token** | Получение нового access token, когда старый истек. | Длинное (например 7–30 дней) | Типично хранится в защищенном контейнере (часто `HttpOnly` cookie) и используется только для обращения к эндпоинту обновления. |
 
 Ключевой смысл: **access token живет мало**, поэтому его компрометация ограничена по времени. **refresh token живет долго**, поэтому к нему требования строже (ротация, отзыв, привязка к устройству/сессии).
@@ -126,12 +125,12 @@ sequenceDiagram
 
 | Операция | Пример SQL | Зачем это нужно |
 | :--- | :--- | :--- |
-| **Создание пользователя** | `INSERT INTO users (...) VALUES (...)` | Регистрация. |
-| **Поиск пользователя** | `SELECT id, password_hash, status FROM users WHERE email = ?` | Вход в систему. |
-| **Фиксация неуспешной попытки** | `UPDATE users SET failed_attempts = failed_attempts + 1 WHERE id = ?` | Anti-bruteforce, блокировки. |
-| **Сохранение refresh token** | `INSERT INTO refresh_tokens (...) VALUES (...)` | Создание «длинной» сессии/устройства. |
-| **Ротация refresh token** | `UPDATE refresh_tokens SET token_hash = ?, rotated_at = ? WHERE id = ?` | Снижение риска при компрометации. |
-| **Отзыв токенов** | `DELETE FROM refresh_tokens WHERE user_id = ?` | Logout «со всех устройств» или отзыв при инциденте. |
+| Создание пользователя | `INSERT INTO users (...) \nVALUES (...)` | Регистрация. |
+| Поиск пользователя | `SELECT id, password_hash, status FROM users WHERE email = ?` | Вход в систему. |
+| Фиксация неуспешной попытки | `UPDATE users SET fails = fails + 1 WHERE id = ?` | Anti-bruteforce, блокировки. |
+| Сохранение refresh token | `INSERT INTO refresh_tokens (...) \nVALUES (...)` | Создание «длинной» сессии/устройства. |
+| Ротация refresh token | `UPDATE refresh_tokens \nSET token_hash = ?, \nrotated_at = ? \nWHERE id = ?` | Снижение риска при компрометации. |
+| Отзыв токенов | `DELETE FROM refresh_tokens \nWHERE user_id = ?` | Logout «со всех устройств» или отзыв при инциденте. |
 
 ## Правила безопасности (и что важно не перепутать)
 

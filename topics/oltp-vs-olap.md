@@ -91,22 +91,62 @@ ORDER BY
 
 Для наглядности представим архитектуру взаимодействия OLTP и OLAP систем в виде диаграммы. Данные из различных OLTP-источников (базы данных, CRM, ERP) с помощью ETL-процесса (Extract, Transform, Load) переносятся в централизованное хранилище данных (Data Warehouse), на основе которого уже работают OLAP-инструменты и BI-системы.
 
-```mermaid
-graph TD
-    subgraph OLTP Systems
-        A[CRM] --> D{ETL};
-        B[ERP] --> D{ETL};
-        C[Databases] --> D{ETL};
-    end
+```plantuml
+@startuml
+' Swiss Style — clean, minimal, balanced
+skinparam shadowing false
+skinparam dpi 160
+skinparam backgroundColor transparent
 
-    subgraph Data Warehouse
-        D --&gt; E[Data Warehouse];
-    end
+' Typography
+skinparam defaultFontName "Inter"
+skinparam defaultFontSize 14
 
-    subgraph OLAP Systems
-        E --&gt; F[OLAP Cubes];
-        F --&gt; G[BI & Reporting];
-    end
+' Lines / arrows
+skinparam ArrowColor #1F2937
+skinparam ArrowThickness 1
+skinparam LineColor  #1F2937
+
+' Shapes
+skinparam RectangleRoundCorner 10
+skinparam RectangleBorderThickness 1
+skinparam RectangleBorderColor #1F2937
+skinparam RectangleBackgroundColor #FFFFFF
+
+' Group (package) look
+skinparam PackageBorderColor #1F2937
+skinparam PackageBorderThickness 1
+skinparam PackageBackgroundColor #F8FAFC
+skinparam PackageFontStyle bold
+skinparam PackageFontColor #111827
+
+title OLTP → ETL → DWH → OLAP → BI
+
+package "OLTP Systems" as OLTP {
+  rectangle "CRM" as CRM
+  rectangle "ERP" as ERP
+  rectangle "Databases" as DBS
+  rectangle ETL
+  CRM --> ETL
+  ERP --> ETL
+  DBS --> ETL
+}
+
+package "Data Warehouse" as DWH {
+  rectangle "Data Warehouse" as WH
+}
+
+package "OLAP Systems" as OLAP {
+  rectangle "OLAP Cubes" as CUBES
+  rectangle "BI & Reporting" as BI
+}
+
+ETL --> WH
+WH  --> CUBES
+CUBES --> BI
+
+@enduml
+
 ```
 
 ## Типичные ошибки и как их избежать

@@ -126,11 +126,11 @@ sequenceDiagram
 | Операция | Пример SQL | Зачем это нужно |
 | :--- | :--- | :--- |
 | Создание пользователя | `INSERT INTO users (...)`<br>`VALUES (...)` | Регистрация. |
-| Поиск пользователя | `SELECT id, password_hash, status`<br>`FROM users WHERE email = ?` | Вход в систему. |
+| Поиск пользователя | `SELECT id, hash,`<br>`status`<br>`FROM users`<br>`WHERE email = ?` | Вход в систему. |
 | Фиксация неуспешной попытки | `UPDATE users`<br>`SET fails = fails + 1 WHERE id = ?` | Anti-bruteforce, блокировки. |
 | Сохранение refresh token | `INSERT INTO refresh_tokens (...)`<br>`VALUES (...)` | Создание «длинной» сессии/устройства. |
 | Ротация refresh token | `UPDATE refresh_tokens`<br>`SET token_hash = ?, rotated_at = ?`<br>`WHERE id = ?` | Снижение риска при компрометации. |
-| Отзыв токенов | `DELETE FROM refresh_tokens`<br>`WHERE user_id = ?` | Logout «со всех устройств» или отзыв при инциденте. |
+| Отзыв токенов | `DELETE FROM`<br>`refresh_tokens`<br>`WHERE user_id = ?` | Logout «со всех устройств» или отзыв при инциденте. |
 
 ## Правила безопасности (и что важно не перепутать)
 

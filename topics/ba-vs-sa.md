@@ -56,15 +56,27 @@
 
 **Диаграмма бизнес-процесса (BPMN) от бизнес-аналитика:**
 
-```mermaid
-graph TD
-    A[Пользователь заходит на сайт] --> B{Выбирает набор питания};
-    B --> C{Хочет изменить состав?};
-    C -- Да --> D[Использует "Конструктор наборов"];
-    D --> E[Система пересчитывает стоимость];
-    E --> F[Пользователь добавляет товар в корзину];
-    C -- Нет --> F;
-    F --> G[Оформление заказа];
+```plantuml
+@startuml
+title Выбор набора питания и оформление заказа
+
+start
+:Пользователь заходит на сайт;
+:Выбирает набор питания;
+
+if (Хочет изменить состав?) then (Да)
+  :Использует "Конструктор наборов";
+  :Система пересчитывает стоимость;
+else (Нет)
+  :Оставляет состав без изменений;
+endif
+
+:Пользователь добавляет товар в корзину;
+:Оформление заказа;
+stop
+
+@enduml
+
 ```
 
 **Действия системного аналитика:**
@@ -75,22 +87,44 @@ graph TD
 
 **Диаграмма последовательности (UML) от системного аналитика:**
 
-```mermaid
-sequenceDiagram
-    participant Пользователь
-    participant Frontend
-    participant Backend
-    participant DB as База данных
+```plantuml
+@startuml
+title Изменение состава набора в корзине и пересчет цены
 
-    Пользователь->>Frontend: Убирает ингредиент из набора
-    Frontend->>Backend: /api/cart/update (itemId, removedIngredient)
-    Backend->>DB: Найти товар и его состав
-    DB-->>Backend: Информация о товаре
-    Backend->>Backend: Пересчитать стоимость
-    Backend->>DB: Обновить заказ в сессии
-    DB-->>Backend: Успешно
-    Backend-->>Frontend: {success: true, newPrice: 999}}
-    Frontend-->>Пользователь: Показать новую цену
+autonumber
+
+actor "Пользователь" as U
+boundary "Frontend" as FE
+control "Service" as BE
+database "База данных" as DB
+
+U -> FE : Убирает ингредиент из набора
+activate U
+activate FE
+
+FE -> BE : **POST** /api/v1/cart/update\n(itemId, removedIngredient)
+activate BE
+
+BE -> DB : **SELECT** item, composition\n**FROM** cart_items\n**WHERE** item_id = :itemId
+activate DB
+DB --> BE : item + composition
+deactivate DB
+
+BE -> BE : Пересчитать стоимость
+
+BE -> DB : **UPDATE** cart_session\n**SET** composition = :newComposition,\nprice = :newPrice\n**WHERE** session_id = :sessionId
+activate DB
+DB --> BE : OK
+deactivate DB
+
+BE --> FE : **200 OK**\n{ success: true, newPrice: 999 }
+deactivate BE
+
+FE --> U : Показать новую цену
+deactivate FE
+deactivate U
+@enduml
+
 ```
 
 ### Пример 2: Внедрение оплаты по QR-коду в мобильном банке

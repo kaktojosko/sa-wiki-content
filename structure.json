@@ -64,7 +64,8 @@
         { "title": "JSON Schema", "slug": "json-schema", "tags": ["api", "format"], "difficulty": 6, "word_count": 903 },
         { "title": "XML vs JSON", "slug": "xml-vs-json", "tags": ["api", "format", "comparison"], "difficulty": 4, "word_count": 1012 },
         { "title": "Swagger", "slug": "swagger", "tags": ["api", "tools"], "difficulty": 6, "word_count": 1009 },
-        { "title": "Callback и Webhook", "slug": "callback-webhook", "tags": ["api", "integration"], "difficulty": 5, "word_count": 981 }
+        { "title": "Callback и Webhook", "slug": "callback-webhook", "tags": ["api", "integration"], "difficulty": 5, "word_count": 981 },
+        { "title": "Виды интеграций", "slug": "integration-types", "tags": ["integration", "architecture"], "difficulty": 6, "word_count": 1500 }
       ]
     },
     {

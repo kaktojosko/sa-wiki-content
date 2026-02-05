@@ -93,7 +93,7 @@ class MonolithicApplication:
 
 **Диаграмма:**
 
-![Диаграмма микросервисной архитектуры](/home/ubuntu/microservices.png)
+![Диаграмма микросервисной архитектуры](images/microservices.png)
 
 **Пример кода (псевдокод):**
 

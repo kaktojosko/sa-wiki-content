@@ -442,6 +442,18 @@
                                            "word_count":  1361
                                        },
                                        {
+                                           "title":  "RabbitMQ для системного аналитика",
+                                           "slug":  "rabbitmq-guide",
+                                           "tags":  [
+                                                        "architecture",
+                                                        "integration",
+                                                        "rabbitmq",
+                                                        "guide"
+                                                    ],
+                                           "difficulty":  8,
+                                           "word_count":  1885
+                                       },
+                                       {
                                            "title":  "Apache Kafka: подробный гайд",
                                            "slug":  "kafka",
                                            "tags":  [

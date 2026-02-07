@@ -6,6 +6,7 @@
         { "title": "Системный аналитик", "slug": "system-analyst", "tags": ["intro", "career"], "difficulty": 3, "word_count": 1743 },
         { "title": "БА vs СА", "slug": "ba-vs-sa", "tags": ["intro", "career"], "difficulty": 4, "word_count": 1625 },
         { "title": "Инструменты аналитика", "slug": "analyst-tools", "tags": ["intro", "tools"], "difficulty": 1, "word_count": 1000 },
+        { "title": "LLM для системного аналитика", "slug": "llm-sa-quality", "tags": ["intro", "tools", "ai", "llm", "quality"], "difficulty": 5, "word_count": 1800 },
         { "title": "SDLC", "slug": "sdlc", "tags": ["process", "methodology"], "difficulty": 4, "word_count": 1201 },
         { "title": "Методологии", "slug": "methodologies", "tags": ["process", "agile", "waterfall"], "difficulty": 4, "word_count": 1141 }
       ]

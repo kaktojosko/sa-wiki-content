@@ -85,7 +85,12 @@
       "title": "Инструменты и DevOps",
       "items": [
         { "title": "Postman", "slug": "postman", "tags": ["tools", "api"], "difficulty": 5, "word_count": 947 },
-        { "title": "Git", "slug": "git", "tags": ["tools", "version-control"], "difficulty": 5, "word_count": 853 },
+        { "title": "Git", "slug": "git", "tags": ["tools", "version-control", "collaboration"], "difficulty": 5, "word_count": 1800 },
+        { "title": "DocOps", "slug": "docops", "tags": ["tools", "devops", "documentation"], "difficulty": 5, "word_count": 1160 },
+        { "title": "LLM для системного аналитика", "slug": "llm-for-analyst", "tags": ["tools", "llm", "productivity"], "difficulty": 4, "word_count": 1120 },
+        { "title": "Jira и Confluence", "slug": "jira-confluence", "tags": ["tools", "management", "documentation"], "difficulty": 3, "word_count": 1050 },
+        { "title": "DBeaver и Navicat", "slug": "dbeaver-navicat", "tags": ["tools", "database", "sql"], "difficulty": 4, "word_count": 1000 },
+        { "title": "DevTools для аналитика", "slug": "devtools-for-analyst", "tags": ["tools", "web", "debugging"], "difficulty": 4, "word_count": 980 },
         { "title": "Мониторинг", "slug": "monitoring", "tags": ["devops", "operations"], "difficulty": 7, "word_count": 1035 }
       ]
     }

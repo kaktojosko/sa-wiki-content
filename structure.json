@@ -11,7 +11,8 @@
                                                         "career"
                                                     ],
                                            "difficulty":  3,
-                                           "word_count":  1743
+                                           "word_count":  1743,
+                                           "is_verified": true
                                        },
                                        {
                                            "title":  "БА vs СА",

@@ -587,7 +587,8 @@
                                                         "productivity"
                                                     ],
                                            "difficulty":  4,
-                                           "word_count":  1120
+                                           "word_count":  1120,
+                                           "is_verified": true
                                        },
                                        {
                                            "title":  "Jira и Confluence",

@@ -1,639 +1,652 @@
-﻿{
-    "sections":  [
-                     {
-                         "title":  "Введение",
-                         "items":  [
-                                       {
-                                           "title":  "Системный аналитик",
-                                           "slug":  "system-analyst",
-                                           "tags":  [
-                                                        "intro",
-                                                        "career"
-                                                    ],
-                                           "difficulty":  3,
-                                           "word_count":  1743,
-                                           "is_verified": true
-                                       },
-                                       {
-                                           "title":  "БА vs СА",
-                                           "slug":  "ba-vs-sa",
-                                           "tags":  [
-                                                        "intro",
-                                                        "career"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1625
-                                       },
-                                       {
-                                           "title":  "Инструменты аналитика",
-                                           "slug":  "analyst-tools",
-                                           "tags":  [
-                                                        "intro",
-                                                        "tools"
-                                                    ],
-                                           "difficulty":  1,
-                                           "word_count":  1000
-                                       },
-                                       {
-                                           "title":  "LLM для системного аналитика",
-                                           "slug":  "llm-sa-quality",
-                                           "tags":  [
-                                                        "intro",
-                                                        "tools",
-                                                        "ai",
-                                                        "llm",
-                                                        "quality"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  1800
-                                       },
-                                       {
-                                           "title":  "SDLC",
-                                           "slug":  "sdlc",
-                                           "tags":  [
-                                                        "process",
-                                                        "methodology"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1201
-                                       },
-                                       {
-                                           "title":  "Методологии",
-                                           "slug":  "methodologies",
-                                           "tags":  [
-                                                        "process",
-                                                        "agile",
-                                                        "waterfall"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1141
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "Требования",
-                         "items":  [
-                                       {
-                                           "title":  "Виды требований",
-                                           "slug":  "requirements-types",
-                                           "tags":  [
-                                                        "requirements"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  1112
-                                       },
-                                       {
-                                           "title":  "User Story",
-                                           "slug":  "user-story",
-                                           "tags":  [
-                                                        "requirements",
-                                                        "agi le"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  880
-                                       },
-                                       {
-                                           "title":  "INVEST",
-                                           "slug":  "invest",
-                                           "tags":  [
-                                                        "requirements",
-                                                        "agile"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  841
-                                       },
-                                       {
-                                           "title":  "Use Case",
-                                           "slug":  "use-case",
-                                           "tags":  [
-                                                        "requirements",
-                                                        "uml"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1136
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "UML и Моделирование",
-                         "items":  [
-                                       {
-                                           "title":  "Введение в UML",
-                                           "slug":  "uml-intro",
-                                           "tags":  [
-                                                        "uml",
-                                                        "modeling"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1114
-                                       },
-                                       {
-                                           "title":  "Sequence Diagram",
-                                           "slug":  "sequence-diagram",
-                                           "tags":  [
-                                                        "uml",
-                                                        "modeling"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  1117
-                                       },
-                                       {
-                                           "title":  "State Diagram",
-                                           "slug":  "state-diagram",
-                                           "tags":  [
-                                                        "uml",
-                                                        "modeling"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  1080
-                                       },
-                                       {
-                                           "title":  "Activity Diagram",
-                                           "slug":  "activity-diagram",
-                                           "tags":  [
-                                                        "uml",
-                                                        "modeling"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  806
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "Бизнес-процессы",
-                         "items":  [
-                                       {
-                                           "title":  "Что такое БП",
-                                           "slug":  "business-processes",
-                                           "tags":  [
-                                                        "bpmn",
-                                                        "process"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  848
-                                       },
-                                       {
-                                           "title":  "BPMN",
-                                           "slug":  "bpmn",
-                                           "tags":  [
-                                                        "bpmn",
-                                                        "modeling"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1522
-                                       },
-                                       {
-                                           "title":  "Элементы BPMN",
-                                           "slug":  "bpmn-elements",
-                                           "tags":  [
-                                                        "bpmn",
-                                                        "modeling"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  846
-                                       },
-                                       {
-                                           "title":  "UML vs BPMN",
-                                           "slug":  "uml-vs-bpmn",
-                                           "tags":  [
-                                                        "bpmn",
-                                                        "uml",
-                                                        "comparison"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  1251
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "Базы данных и SQL",
-                         "items":  [
-                                       {
-                                           "title":  "Реляционные БД",
-                                           "slug":  "rdbms-basics",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  1073
-                                       },
-                                       {
-                                           "title":  "ERD",
-                                           "slug":  "erd",
-                                           "tags":  [
-                                                        "sql",
-                                                        "modeling",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  922
-                                       },
-                                       {
-                                           "title":  "Нормализация",
-                                           "slug":  "normalization",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1357
-                                       },
-                                       {
-                                           "title":  "SQL Основы",
-                                           "slug":  "sql-basics",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  3,
-                                           "word_count":  1036
-                                       },
-                                       {
-                                           "title":  "SQL JOIN",
-                                           "slug":  "sql-join",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1089
-                                       },
-                                       {
-                                           "title":  "Агрегатные функции",
-                                           "slug":  "sql-aggregates",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1111
-                                       },
-                                       {
-                                           "title":  "GROUP BY",
-                                           "slug":  "sql-group-by",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  901
-                                       },
-                                       {
-                                           "title":  "Типы данных",
-                                           "slug":  "sql-types",
-                                           "tags":  [
-                                                        "sql",
-                                                        "database"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1177
-                                       },
-                                       {
-                                           "title":  "OLTP vs OLAP",
-                                           "slug":  "oltp-vs-olap",
-                                           "tags":  [
-                                                        "database",
-                                                        "architecture"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  1329
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "API и Интеграции",
-                         "items":  [
-                                       {
-                                           "title":  "Что такое API",
-                                           "slug":  "api-intro",
-                                           "tags":  [
-                                                        "api",
-                                                        "integration"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  855
-                                       },
-                                       {
-                                           "title":  "REST API",
-                                           "slug":  "rest-api",
-                                           "tags":  [
-                                                        "api",
-                                                        "rest"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1083
-                                       },
-                                       {
-                                           "title":  "Продвинутый REST API",
-                                           "slug":  "api-advanced",
-                                           "tags":  [
-                                                        "api",
-                                                        "rest",
-                                                        "advanced"
-                                                    ],
-                                           "difficulty":  1,
-                                           "word_count":  1000
-                                       },
-                                       {
-                                           "title":  "HTTP Методы",
-                                           "slug":  "http-methods",
-                                           "tags":  [
-                                                        "api",
-                                                        "http"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1448
-                                       },
-                                       {
-                                           "title":  "HTTP Коды",
-                                           "slug":  "http-codes",
-                                           "tags":  [
-                                                        "api",
-                                                        "http"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1452
-                                       },
-                                       {
-                                           "title":  "Протоколы (TCP/IP, HTTP)",
-                                           "slug":  "protocols",
-                                           "tags":  [
-                                                        "network",
-                                                        "basics"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1773
-                                       },
-                                       {
-                                           "title":  "JSON",
-                                           "slug":  "json",
-                                           "tags":  [
-                                                        "api",
-                                                        "format",
-                                                        "basics"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  870
-                                       },
-                                       {
-                                           "title":  "JSON Schema",
-                                           "slug":  "json-schema",
-                                           "tags":  [
-                                                        "api",
-                                                        "format"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  903
-                                       },
-                                       {
-                                           "title":  "XML vs JSON",
-                                           "slug":  "xml-vs-json",
-                                           "tags":  [
-                                                        "api",
-                                                        "format",
-                                                        "comparison"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1012
-                                       },
-                                       {
-                                           "title":  "Swagger",
-                                           "slug":  "swagger",
-                                           "tags":  [
-                                                        "api",
-                                                        "tools"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  1009
-                                       },
-                                       {
-                                           "title":  "Callback и Webhook",
-                                           "slug":  "callback-webhook",
-                                           "tags":  [
-                                                        "api",
-                                                        "integration"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  981
-                                       },
-                                       {
-                                           "title":  "Виды интеграций",
-                                           "slug":  "integration-types",
-                                           "tags":  [
-                                                        "integration",
-                                                        "architecture"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  1500
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "Событийная архитектура и брокеры",
-                         "items":  [
-                                       {
-                                           "title":  "Брокеры сообщений",
-                                           "slug":  "message-brokers",
-                                           "tags":  [
-                                                        "architecture",
-                                                        "integration"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1361
-                                       },
-                                       {
-                                           "title":  "RabbitMQ для системного аналитика",
-                                           "slug":  "rabbitmq-guide",
-                                           "tags":  [
-                                                        "architecture",
-                                                        "integration",
-                                                        "rabbitmq",
-                                                        "guide"
-                                                    ],
-                                           "difficulty":  8,
-                                           "word_count":  1885
-                                       },
-                                       {
-                                           "title":  "Apache Kafka: подробный гайд",
-                                           "slug":  "kafka",
-                                           "tags":  [
-                                                        "architecture",
-                                                        "integration",
-                                                        "messaging",
-                                                        "event-driven"
-                                                    ],
-                                           "difficulty":  9,
-                                           "word_count":  1802
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "Архитектура и Безопасность",
-                         "items":  [
-                                       {
-                                           "title":  "Монолит vs Микросервисы",
-                                           "slug":  "monolith-vs-microservices",
-                                           "tags":  [
-                                                        "architecture",
-                                                        "comparison"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1190
-                                       },
-                                       {
-                                           "title":  "Синхронное vs Асинхронное",
-                                           "slug":  "sync-vs-async",
-                                           "tags":  [
-                                                        "architecture",
-                                                        "basics"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  1163
-                                       },
-                                       {
-                                           "title":  "Аутентификация vs Авторизация",
-                                           "slug":  "auth-vs-auth",
-                                           "tags":  [
-                                                        "security",
-                                                        "comparison"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1238
-                                       },
-                                       {
-                                           "title":  "Гайд по авторизации",
-                                           "slug":  "auth-guide",
-                                           "tags":  [
-                                                        "security",
-                                                        "auth",
-                                                        "guide"
-                                                    ],
-                                           "difficulty":  1,
-                                           "word_count":  1000
-                                       },
-                                       {
-                                           "title":  "OAuth 2.0",
-                                           "slug":  "oauth",
-                                           "tags":  [
-                                                        "security",
-                                                        "auth"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  936
-                                       },
-                                       {
-                                           "title":  "JWT",
-                                           "slug":  "jwt",
-                                           "tags":  [
-                                                        "security",
-                                                        "auth"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  997
-                                       },
-                                       {
-                                           "title":  "Хеширование и шифрование",
-                                           "slug":  "hashing-encryption",
-                                           "tags":  [
-                                                        "security"
-                                                    ],
-                                           "difficulty":  6,
-                                           "word_count":  921
-                                       }
-                                   ]
-                     },
-                     {
-                         "title":  "Инструменты и DevOps",
-                         "items":  [
-                                       {
-                                           "title":  "Postman",
-                                           "slug":  "postman",
-                                           "tags":  [
-                                                        "tools",
-                                                        "api"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  947
-                                       },
-                                       {
-                                           "title":  "Git",
-                                           "slug":  "git",
-                                           "tags":  [
-                                                        "tools",
-                                                        "version-control",
-                                                        "collaboration"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  1800
-                                       },
-                                       {
-                                           "title":  "DocOps",
-                                           "slug":  "docops",
-                                           "tags":  [
-                                                        "tools",
-                                                        "devops",
-                                                        "documentation"
-                                                    ],
-                                           "difficulty":  5,
-                                           "word_count":  1160
-                                       },
-                                       {
-                                           "title":  "LLM для системного аналитика",
-                                           "slug":  "llm-for-analyst",
-                                           "tags":  [
-                                                        "tools",
-                                                        "llm",
-                                                        "productivity"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1120,
-                                           "is_verified": true
-                                       },
-                                       {
-                                           "title":  "Jira и Confluence",
-                                           "slug":  "jira-confluence",
-                                           "tags":  [
-                                                        "tools",
-                                                        "management",
-                                                        "documentation"
-                                                    ],
-                                           "difficulty":  3,
-                                           "word_count":  1050
-                                       },
-                                       {
-                                           "title":  "DBeaver и Navicat",
-                                           "slug":  "dbeaver-navicat",
-                                           "tags":  [
-                                                        "tools",
-                                                        "database",
-                                                        "sql"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  1000
-                                       },
-                                       {
-                                           "title":  "DevTools для аналитика",
-                                           "slug":  "devtools-for-analyst",
-                                           "tags":  [
-                                                        "tools",
-                                                        "web",
-                                                        "debugging"
-                                                    ],
-                                           "difficulty":  4,
-                                           "word_count":  980
-                                       },
-                                       {
-                                           "title":  "Мониторинг",
-                                           "slug":  "monitoring",
-                                           "tags":  [
-                                                        "devops",
-                                                        "operations"
-                                                    ],
-                                           "difficulty":  7,
-                                           "word_count":  1035
-                                       }
-                                   ]
-                     }
-                 ]
+{
+    "sections": [
+        {
+            "title": "Введение",
+            "items": [
+                {
+                    "title": "Системный аналитик",
+                    "slug": "system-analyst",
+                    "tags": [
+                        "intro",
+                        "career"
+                    ],
+                    "difficulty": 3,
+                    "word_count": 1743,
+                    "is_verified": true
+                },
+                {
+                    "title": "БА vs СА",
+                    "slug": "ba-vs-sa",
+                    "tags": [
+                        "intro",
+                        "career"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1625
+                },
+                {
+                    "title": "Инструменты аналитика",
+                    "slug": "analyst-tools",
+                    "tags": [
+                        "intro",
+                        "tools"
+                    ],
+                    "difficulty": 1,
+                    "word_count": 1000
+                },
+                {
+                    "title": "LLM для системного аналитика",
+                    "slug": "llm-sa-quality",
+                    "tags": [
+                        "intro",
+                        "tools",
+                        "ai",
+                        "llm",
+                        "quality"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 1800
+                },
+                {
+                    "title": "SDLC",
+                    "slug": "sdlc",
+                    "tags": [
+                        "process",
+                        "methodology"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1201
+                },
+                {
+                    "title": "Методологии",
+                    "slug": "methodologies",
+                    "tags": [
+                        "process",
+                        "agile",
+                        "waterfall"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1141
+                }
+            ]
+        },
+        {
+            "title": "Требования",
+            "items": [
+                {
+                    "title": "Виды требований",
+                    "slug": "requirements-types",
+                    "tags": [
+                        "requirements"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 1112
+                },
+                {
+                    "title": "User Story",
+                    "slug": "user-story",
+                    "tags": [
+                        "requirements",
+                        "agi le"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 880
+                },
+                {
+                    "title": "INVEST",
+                    "slug": "invest",
+                    "tags": [
+                        "requirements",
+                        "agile"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 841
+                },
+                {
+                    "title": "Use Case",
+                    "slug": "use-case",
+                    "tags": [
+                        "requirements",
+                        "uml"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1136
+                }
+            ]
+        },
+        {
+            "title": "UML и Моделирование",
+            "items": [
+                {
+                    "title": "Введение в UML",
+                    "slug": "uml-intro",
+                    "tags": [
+                        "uml",
+                        "modeling"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1114
+                },
+                {
+                    "title": "Sequence Diagram",
+                    "slug": "sequence-diagram",
+                    "tags": [
+                        "uml",
+                        "modeling"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 1117
+                },
+                {
+                    "title": "State Diagram",
+                    "slug": "state-diagram",
+                    "tags": [
+                        "uml",
+                        "modeling"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 1080
+                },
+                {
+                    "title": "Activity Diagram",
+                    "slug": "activity-diagram",
+                    "tags": [
+                        "uml",
+                        "modeling"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 806
+                }
+            ]
+        },
+        {
+            "title": "Бизнес-процессы",
+            "items": [
+                {
+                    "title": "Что такое БП",
+                    "slug": "business-processes",
+                    "tags": [
+                        "bpmn",
+                        "process"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 848
+                },
+                {
+                    "title": "BPMN",
+                    "slug": "bpmn",
+                    "tags": [
+                        "bpmn",
+                        "modeling"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1522
+                },
+                {
+                    "title": "Элементы BPMN",
+                    "slug": "bpmn-elements",
+                    "tags": [
+                        "bpmn",
+                        "modeling"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 846
+                },
+                {
+                    "title": "UML vs BPMN",
+                    "slug": "uml-vs-bpmn",
+                    "tags": [
+                        "bpmn",
+                        "uml",
+                        "comparison"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 1251
+                }
+            ]
+        },
+        {
+            "title": "Базы данных и SQL",
+            "items": [
+                {
+                    "title": "Реляционные БД",
+                    "slug": "rdbms-basics",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 1073
+                },
+                {
+                    "title": "ERD",
+                    "slug": "erd",
+                    "tags": [
+                        "sql",
+                        "modeling",
+                        "database"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 922
+                },
+                {
+                    "title": "Нормализация",
+                    "slug": "normalization",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1357
+                },
+                {
+                    "title": "SQL Основы",
+                    "slug": "sql-basics",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 3,
+                    "word_count": 1036
+                },
+                {
+                    "title": "SQL JOIN",
+                    "slug": "sql-join",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1089
+                },
+                {
+                    "title": "Агрегатные функции",
+                    "slug": "sql-aggregates",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1111
+                },
+                {
+                    "title": "GROUP BY",
+                    "slug": "sql-group-by",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 901
+                },
+                {
+                    "title": "Типы данных",
+                    "slug": "sql-types",
+                    "tags": [
+                        "sql",
+                        "database"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1177
+                },
+                {
+                    "title": "OLTP vs OLAP",
+                    "slug": "oltp-vs-olap",
+                    "tags": [
+                        "database",
+                        "architecture"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 1329
+                },
+                {
+                    "title": "МЕГА-репозиторий метаданных: анализ технологий",
+                    "slug": "mega-repository-analysis",
+                    "tags": [
+                        "databases",
+                        "knowledge-graph",
+                        "metadata",
+                        "architecture",
+                        "data-lineage"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 3500
+                }
+            ]
+        },
+        {
+            "title": "API и Интеграции",
+            "items": [
+                {
+                    "title": "Что такое API",
+                    "slug": "api-intro",
+                    "tags": [
+                        "api",
+                        "integration"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 855
+                },
+                {
+                    "title": "REST API",
+                    "slug": "rest-api",
+                    "tags": [
+                        "api",
+                        "rest"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1083
+                },
+                {
+                    "title": "Продвинутый REST API",
+                    "slug": "api-advanced",
+                    "tags": [
+                        "api",
+                        "rest",
+                        "advanced"
+                    ],
+                    "difficulty": 1,
+                    "word_count": 1000
+                },
+                {
+                    "title": "HTTP Методы",
+                    "slug": "http-methods",
+                    "tags": [
+                        "api",
+                        "http"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1448
+                },
+                {
+                    "title": "HTTP Коды",
+                    "slug": "http-codes",
+                    "tags": [
+                        "api",
+                        "http"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1452
+                },
+                {
+                    "title": "Протоколы (TCP/IP, HTTP)",
+                    "slug": "protocols",
+                    "tags": [
+                        "network",
+                        "basics"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1773
+                },
+                {
+                    "title": "JSON",
+                    "slug": "json",
+                    "tags": [
+                        "api",
+                        "format",
+                        "basics"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 870
+                },
+                {
+                    "title": "JSON Schema",
+                    "slug": "json-schema",
+                    "tags": [
+                        "api",
+                        "format"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 903
+                },
+                {
+                    "title": "XML vs JSON",
+                    "slug": "xml-vs-json",
+                    "tags": [
+                        "api",
+                        "format",
+                        "comparison"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1012
+                },
+                {
+                    "title": "Swagger",
+                    "slug": "swagger",
+                    "tags": [
+                        "api",
+                        "tools"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 1009
+                },
+                {
+                    "title": "Callback и Webhook",
+                    "slug": "callback-webhook",
+                    "tags": [
+                        "api",
+                        "integration"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 981
+                },
+                {
+                    "title": "Виды интеграций",
+                    "slug": "integration-types",
+                    "tags": [
+                        "integration",
+                        "architecture"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 1500
+                }
+            ]
+        },
+        {
+            "title": "Событийная архитектура и брокеры",
+            "items": [
+                {
+                    "title": "Брокеры сообщений",
+                    "slug": "message-brokers",
+                    "tags": [
+                        "architecture",
+                        "integration"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1361
+                },
+                {
+                    "title": "RabbitMQ для системного аналитика",
+                    "slug": "rabbitmq-guide",
+                    "tags": [
+                        "architecture",
+                        "integration",
+                        "rabbitmq",
+                        "guide"
+                    ],
+                    "difficulty": 8,
+                    "word_count": 1885
+                },
+                {
+                    "title": "Apache Kafka: подробный гайд",
+                    "slug": "kafka",
+                    "tags": [
+                        "architecture",
+                        "integration",
+                        "messaging",
+                        "event-driven"
+                    ],
+                    "difficulty": 9,
+                    "word_count": 1802
+                }
+            ]
+        },
+        {
+            "title": "Архитектура и Безопасность",
+            "items": [
+                {
+                    "title": "Монолит vs Микросервисы",
+                    "slug": "monolith-vs-microservices",
+                    "tags": [
+                        "architecture",
+                        "comparison"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1190
+                },
+                {
+                    "title": "Синхронное vs Асинхронное",
+                    "slug": "sync-vs-async",
+                    "tags": [
+                        "architecture",
+                        "basics"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 1163
+                },
+                {
+                    "title": "Аутентификация vs Авторизация",
+                    "slug": "auth-vs-auth",
+                    "tags": [
+                        "security",
+                        "comparison"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1238
+                },
+                {
+                    "title": "Гайд по авторизации",
+                    "slug": "auth-guide",
+                    "tags": [
+                        "security",
+                        "auth",
+                        "guide"
+                    ],
+                    "difficulty": 1,
+                    "word_count": 1000
+                },
+                {
+                    "title": "OAuth 2.0",
+                    "slug": "oauth",
+                    "tags": [
+                        "security",
+                        "auth"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 936
+                },
+                {
+                    "title": "JWT",
+                    "slug": "jwt",
+                    "tags": [
+                        "security",
+                        "auth"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 997
+                },
+                {
+                    "title": "Хеширование и шифрование",
+                    "slug": "hashing-encryption",
+                    "tags": [
+                        "security"
+                    ],
+                    "difficulty": 6,
+                    "word_count": 921
+                }
+            ]
+        },
+        {
+            "title": "Инструменты и DevOps",
+            "items": [
+                {
+                    "title": "Postman",
+                    "slug": "postman",
+                    "tags": [
+                        "tools",
+                        "api"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 947
+                },
+                {
+                    "title": "Git",
+                    "slug": "git",
+                    "tags": [
+                        "tools",
+                        "version-control",
+                        "collaboration"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 1800
+                },
+                {
+                    "title": "DocOps",
+                    "slug": "docops",
+                    "tags": [
+                        "tools",
+                        "devops",
+                        "documentation"
+                    ],
+                    "difficulty": 5,
+                    "word_count": 1160
+                },
+                {
+                    "title": "LLM для системного аналитика",
+                    "slug": "llm-for-analyst",
+                    "tags": [
+                        "tools",
+                        "llm",
+                        "productivity"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1120,
+                    "is_verified": true
+                },
+                {
+                    "title": "Jira и Confluence",
+                    "slug": "jira-confluence",
+                    "tags": [
+                        "tools",
+                        "management",
+                        "documentation"
+                    ],
+                    "difficulty": 3,
+                    "word_count": 1050
+                },
+                {
+                    "title": "DBeaver и Navicat",
+                    "slug": "dbeaver-navicat",
+                    "tags": [
+                        "tools",
+                        "database",
+                        "sql"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 1000
+                },
+                {
+                    "title": "DevTools для аналитика",
+                    "slug": "devtools-for-analyst",
+                    "tags": [
+                        "tools",
+                        "web",
+                        "debugging"
+                    ],
+                    "difficulty": 4,
+                    "word_count": 980
+                },
+                {
+                    "title": "Мониторинг",
+                    "slug": "monitoring",
+                    "tags": [
+                        "devops",
+                        "operations"
+                    ],
+                    "difficulty": 7,
+                    "word_count": 1035
+                }
+            ]
+        }
+    ]
 }

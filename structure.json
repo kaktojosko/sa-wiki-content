@@ -299,19 +299,6 @@
                     "difficulty": 5,
                     "word_count": 1329
                 },
-                {
-                    "title": "МЕГА-репозиторий метаданных: анализ технологий",
-                    "slug": "mega-repository-analysis",
-                    "tags": [
-                        "databases",
-                        "knowledge-graph",
-                        "metadata",
-                        "architecture",
-                        "data-lineage"
-                    ],
-                    "difficulty": 5,
-                    "word_count": 3500
-                }
             ]
         },
         {
